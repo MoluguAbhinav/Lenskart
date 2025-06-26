@@ -1,0 +1,41 @@
+<mvc:View controllerName="project1.controller.Cart"
+
+    xmlns:mvc="sap.ui.core.mvc"
+
+    xmlns="sap.m"
+
+    xmlns:core="sap.ui.core">
+<Page id="cartPage" class="customPageStyle" title="Your Cart">
+<content>
+<List id="_IDGenList1" items="{cart>/items}" headerText="{= 'Items: ' + ${cart>/items}.length}">
+<CustomListItem id="_IDGenCustomListItem">
+<HBox id="_IDGenHBox1" justifyContent="SpaceBetween" alignItems="Center" width="100%">
+<VBox id="_IDGenVBox">
+<Text id="_IDGenText2" text="{cart>name}" />
+<Text id="_IDGenText3" text="₹{cart>price} x {cart>quantity}" />
+</VBox>
+<Button id="_IDGenButton2" icon="sap-icon://delete" type="Reject" press="onDeleteItem" />
+</HBox>
+</CustomListItem>
+</List>
+<!-- Address Dropdown Fixed -->
+<Label id="_IDGenLabel" text="Select Delivery Address" class="sapUiSmallMarginTop"/>
+<Select id="addressSelect" items="{addresses>/addresses}" selectedKey="">
+<items>
+<core:Item id="_IDGenItem3" key="" text="-- Select Address --" />
+<core:Item id="_IDGenItem5" key="{addresses>id}" text="{addresses>label}" />
+</items>
+</Select>
+</content>
+<footer>
+<Bar id="_IDGenBar" design="Footer">
+<contentLeft>
+<Text id="_IDGenText4" text="Total: ₹{cart>/total}" class="sapUiSmallMarginBegin"/>
+</contentLeft>
+<contentRight>
+<Button id="_IDGenButton3" text="Checkout" type="Emphasized" press="onProceedToCheckout"/>
+</contentRight>
+</Bar>
+</footer>
+</Page>
+</mvc:View>

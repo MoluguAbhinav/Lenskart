@@ -1,0 +1,16 @@
+<mvc:View controllerName="project1.controller.Home"
+    xmlns:mvc="sap.ui.core.mvc"
+    xmlns="sap.m">
+    <Page id="homePage" title="Lens Mart - Welcome" class="homeBackground">
+        <content>
+            <VBox id="signupBox" class="sapUiMediumMargin sapUiLargePadding" justifyContent="Center" alignItems="Center">
+                <Image id="_IDGenImage" src="https://www.payalebarquarter.com/siteassets/paya-lebar-quarter/tenancy-images/lenskart.png" alt="Lens Mart Logo" width="1000px" height="auto" class="sapUiSmallMarginBottom"/>
+                <Title id="_IDGenTitle2" text="Welcome to Lens Mart!" level="H1"/>
+                <HBox id="_IDGenHBox" class="sapUiSmallMarginTopBottom">
+                    <Button id="loginButton" text="Login" type="Emphasized" press="onLoginPress"/>
+                    <Button id="signupButton" text="Sign Up" class="sapUiTinyMarginBegin" press="onSignupPress"/>
+                </HBox>
+            </VBox>
+        </content>
+    </Page>
+</mvc:View>

@@ -1,0 +1,16 @@
+<mvc:View controllerName="project1.controller.Login"
+    xmlns:mvc="sap.ui.core.mvc"
+    xmlns="sap.m">
+    <Page id="loginPage" title="Login" class="loginBackground">
+        <content>
+            <VBox id="loginBox" class="loginBox sapUiMediumMargin sapUiLargePadding" alignItems="Center" width="100%">
+                <Image id="loginImage" src="https://cdn-icons-png.flaticon.com/512/5087/5087579.png" alt="Login Image" width="180px" class="sapUiSmallMarginBottom"/>
+                <Title id="_IDGenTitle3" text="Login to your Account"/>
+                <Input id="email1" placeholder="Email" type="Email" width="100%" class="sapUiSmallMarginBottom"/>
+                <Input id="password1" placeholder="Password" type="Password" width="100%" class="sapUiSmallMarginBottom"/>
+                <Button id="submitButton1" text="Login" type="Emphasized" width="100%" press="onLogin"/>
+                <Link id="signupLink" text="Don't have an account? Sign Up" class="sapUiSmallMarginTop" press="onSignupNav"/>
+            </VBox>
+        </content>
+    </Page>
+</mvc:View>

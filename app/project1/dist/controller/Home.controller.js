@@ -1,0 +1,2 @@
+sap.ui.define(["sap/ui/core/mvc/Controller"],function(o){"use strict";return o.extend("project1.controller.Home",{onLoginPress:function(){var o=sap.ui.core.UIComponent.getRouterFor(this);o.navTo("RouteLogin")},onSignupPress:function(){var o=sap.ui.core.UIComponent.getRouterFor(this);o.navTo("RouteSignup")}})});
+//# sourceMappingURL=Home.controller.js.map

@@ -1,0 +1,20 @@
+<mvc:View controllerName="project1.controller.Signup"
+    xmlns:mvc="sap.ui.core.mvc"
+    xmlns="sap.m">
+    <Page id="_IDGenPage1" title="Sign Up" class="signupBox">
+        <content>
+            <VBox id="signupBox1" class="sapUiMediumMargin sapUiLargePadding" alignItems="Center" width="100%">
+            <Image id="signupImage" src="https://thumbs.dreamstime.com/b/sign-up-icon-button-link-register-signup-online-now-free-login-click-vector-form-233114302.jpg" alt="Lens Mart Logo" width="250px" height="auto" class="sapUiSmallMarginBottom"/>
+                
+                <Title id="_IDGenTitle" text="Create your Account"/>
+                <Input id="email" placeholder="Email" type="Email" width="100%" class="sapUiSmallMarginBottom"/>
+                <Input id="username" placeholder="Username" width="100%" class="sapUiSmallMarginBottom"/>
+                <Input id="mobilenumber" placeholder="Mobile Number" type="Tel" width="100%" class="sapUiSmallMarginBottom"/>
+                <Input id="password" placeholder="Password" type="Password" width="100%" class="sapUiSmallMarginBottom"/>
+                <Input id="confirmpassword" placeholder="Confirm Password" type="Password" width="100%" class="sapUiSmallMarginBottom"/>
+                <Button id="submitButton" text="Sign Up" type="Emphasized" width="100%" press="onSignup"/>
+                <Link id="signinLink" text="Already have an account? Sign In" class="sapUiSmallMarginTop" press="onSignInNav"/>
+            </VBox>
+        </content>
+    </Page>
+</mvc:View>

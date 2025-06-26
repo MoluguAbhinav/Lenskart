@@ -1,0 +1,32 @@
+<mvc:View controllerName="project1.controller.Payment"
+
+    xmlns:mvc="sap.ui.core.mvc"
+
+    xmlns="sap.m"
+
+    xmlns:core="sap.ui.core">
+<Page id="payPage" class="customPageStyle" title="Payment">
+<content>
+<VBox id="_IDGenVBox3" class="sapUiLargeMargin">
+<Text id="_IDGenText5" text="{= 'Pay ₹' + ${cart>/total}}" class="sapUiSmallMarginBottom"/>
+<Label id="_IDGenLabel1" text="Select Payment Mode"/>
+<Select id="payType" selectedKey="" change="onPayModeChange">
+<items>
+<core:Item id="_IDGenItem4" key="" text="-- Select Payment Mode --"/>
+<core:Item id="_IDGenItem6" key="upi" text="UPI"/>
+<core:Item id="_IDGenItem7" key="card" text="Credit/Debit Card"/>
+</items>
+</Select>
+<Input id="upiField" placeholder="Enter UPI ID" visible="{= ${payType>/selectedKey} === 'upi'}" liveChange="onInputChange"/>
+<Input id="cardField" placeholder="Enter Card Number" visible="{= ${payType>/selectedKey} === 'card'}" type="Tel" liveChange="onInputChange"/>
+</VBox>
+</content>
+<footer>
+<Bar id="_IDGenBar1" design="Footer">
+<contentRight>
+<Button id="payBtn" text="Pay" type="Emphasized" enabled="false" press="onPay"/>
+</contentRight>
+</Bar>
+</footer>
+</Page>
+</mvc:View>

@@ -1,0 +1,2 @@
+sap.ui.define(["sap/ui/core/mvc/Controller"],function(e){"use strict";return e.extend("project1.controller.Success",{onNavToDashboard:function(){this.getOwnerComponent().getRouter().navTo("RouteDashboard")}})});
+//# sourceMappingURL=Success.controller.js.map
