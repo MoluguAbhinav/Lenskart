@@ -1,0 +1,42 @@
+:root {
+    --accent: #47c9af;
+    --accent-dark: #348f7c;
+    --bg: #f8fafc;
+    --card-bg: #fff;
+    --card-shadow: 0 2px 8px rgba(0,0,0,0.06);
+  }
+  
+  /* Page backgrounds */
+  .homeBackground, .loginBackground, .signupBox {
+    background: linear-gradient(120deg, #a1c4fd 0%, #c2e9fb 100%);
+  }
+  .customPageStyle {
+    background: var(--bg) !important;
+  }
+  
+  /* Product cards */
+  .customProductCard {
+    background: var(--card-bg);
+    border-radius: 12px;
+    box-shadow: var(--card-shadow);
+    transition: box-shadow 0.2s, transform 0.2s;
+    padding: 16px;
+    margin: 10px;
+  }
+  .customProductCard:hover {
+    box-shadow: 0 6px 24px rgba(52,201,175,0.12);
+    transform: translateY(-2px) scale(1.03);
+  }
+  .sapMBtn {
+    border-radius: 8px !important;
+    font-weight: 600;
+  }
+  .sapUiLargeTitle {
+    font-size: 2rem;
+    color: var(--accent-dark);
+    margin-bottom: 8px;
+  }
+  @media (max-width: 600px) {
+    .customProductCard { width: 100% !important; }
+  }
+  

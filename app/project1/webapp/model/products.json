@@ -1,0 +1,53 @@
+{
+    "filteredProducts": [
+      {
+        "id": "sp1",
+        "name": "Classic Black Frame",
+        "description": "Timeless black full-rim acetate for every face.",
+        "price": 1499,
+        "image": "https://static5.lenskart.com/media/catalog/product/pro/1/thumbnail/480x480/9df78eab33525d08d6e5fb8d27136e95//l/i/black-blue-full-rim-rectangle-lenskart-air-memory-la-e16492-c1-eyeglasses_img_1564_02_02_2024.jpg"
+      },
+      {
+        "id": "sp2",
+        "name": "Transparent Trendy Frame",
+        "description": "Modern transparent frame, lightweight and stylish.",
+        "price": 1650,
+        "image": "https://static5.lenskart.com/media/catalog/product/pro/1/thumbnail/480x480/9df78eab33525d08d6e5fb8d27136e95//h/i/blue-transparent-pink-purple-full-rim-round-kids--5-8-yrs--hooper-flexi-hooper-hp-e15083m-c3-eyeglasses_blue-transparent-pink-purple-full-rim-round-kids-(5-8-yrs)-hooper-flexi-hooper-hp-e15083m-c3-eyeglasses_g_8787_9_21_22_22_march23.jpg.jpg"
+      },
+      {
+        "id": "sp3",
+        "name": "Tortoise Shell Round",
+        "description": "Eye-catching tortoise shell for a classic look.",
+        "price": 1850,
+        "image": "https://static5.lenskart.com/media/catalog/product/pro/1/thumbnail/480x480/9df78eab33525d08d6e5fb8d27136e95//j/o/john-jacobs-jj-e10227-c4-dup-eyeglasses_j_1502_1.jpg"
+      },
+      {
+        "id": "sp4",
+        "name": "Minimalist Gold Rim",
+        "description": "Minimal style with thin gold metal rim.",
+        "price": 1999,
+        "image": "https://static5.lenskart.com/media/catalog/product/pro/1/thumbnail/480x480/9df78eab33525d08d6e5fb8d27136e95//l/e/lenskart-blu-lb-e14271-c1-eyeglasses_J_2003.jpg"
+      },
+      {
+        "id": "sp5",
+        "name": "Bold Blue Rectangle",
+        "description": "Vibrant blue rectangular frame for a bold look.",
+        "price": 1599,
+        "image":"https://static5.lenskart.com/media/catalog/product/pro/1/thumbnail/480x480/9df78eab33525d08d6e5fb8d27136e95//l/i/peyush-bansal-shark-tank-navy-full-rim-wayfarer-lenskart-hustlr-lb-e14058-h-c34-eyeglasses_g_1238_09_11_2023.jpg"
+      },
+      {
+        "id": "sp6",
+        "name": "Retro Round Frame",
+        "description": "Classic round metal frame for retro lovers.",
+        "price": 1750,
+        "image": "https://cdn-images.farfetch-contents.com/19/41/63/85/19416385_43907555_1000.jpg"
+      },
+      {
+        "id": "sp7",
+        "name": "Kids Colorful Frame",
+        "description": "Fun, flexible, and colorful frames for kids.",
+        "price": 999,
+        "image": "https://cdn.fcglcdn.com/brainbees/images/products/583x720/12983461a.webp"
+      }
+    ]
+  }

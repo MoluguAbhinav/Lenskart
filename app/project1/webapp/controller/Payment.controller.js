@@ -33,7 +33,7 @@ sap.ui.define([
           return;
         }
         var jwt = localStorage.getItem("jwt");
-        fetch("/ecommerce-service/placeOrder", {
+        fetch("/odata/v4/ecommerce/placeOrder", {
           method: "POST",
           headers: { "Content-Type": "application/json", "Authorization": "Bearer " + jwt },
           body: JSON.stringify({ items: aCartItems, total: total })

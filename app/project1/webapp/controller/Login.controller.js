@@ -8,7 +8,7 @@ sap.ui.define([
         var password = this.byId("password1").getValue();
         if (!email || !password)
           return MessageBox.error("Please enter email and password.");
-        fetch("/ecommerce-service/login", {
+        fetch("/odata/v4/ecommerce/login", {
           method: "POST",
           headers: { "Content-Type": "application/json" },
           body: JSON.stringify({ email, password })

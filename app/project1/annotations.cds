@@ -1,1 +1,0 @@
-using EcommerceService as service from '../../srv/ecommerce-service';
