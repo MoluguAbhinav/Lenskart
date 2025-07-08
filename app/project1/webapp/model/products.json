@@ -48,6 +48,48 @@
         "description": "Fun, flexible, and colorful frames for kids.",
         "price": 999,
         "image": "https://cdn.fcglcdn.com/brainbees/images/products/583x720/12983461a.webp"
+      },
+      {
+        "id": "sp8",
+        "name": "Blue Block Screen Glasses",
+        "description": "Silver Full Rim Hexagonal Lenskart Blu LB",
+        "price": 800,
+        "image": "https://static5.lenskart.com/media/catalog/product/pro/1/thumbnail/480x480/9df78eab33525d08d6e5fb8d27136e95//l/i/lenskart-blu-lb-e18339-silver--eyeglasses_dsc6326_24_06_2025.jpg"
+      },
+      {
+        "id": "sp9",
+        "name": "Blue Block Screen Glasses",
+        "description": "Matte Black Full Rim Square Lenskart Blu",
+        "price": 500,
+        "image":"https://static5.lenskart.com/media/catalog/product/pro/1/thumbnail/480x480/9df78eab33525d08d6e5fb8d27136e95//l/i/blue-block-screen-glasses:-matte-black-full-rim-square-lenskart-blu-lb-e13526-c1_vincent-chase-vc-e13526-c1-eyeglasses_g_8389_28july23.jpg"
+      },
+      {
+        "id": "sp10",
+        "name": "Vincent Chase Polarized",
+        "description": "Gold Full Rim Aviator",
+        "price": 1400,
+        "image": "https://static5.lenskart.com/media/catalog/product/pro/1/thumbnail/480x480/9df78eab33525d08d6e5fb8d27136e95//v/i/gold-blue-gradient-full-rim-aviator-vincent-chase-polarized-vintage-vc-s11075-c12-sunglasses_g_3384_6_02_22.jpg"
+      },
+      {
+        "id": "sp11",
+        "name": "John Jacobs Dark Gunmetal Full Rim Square",
+        "description": "Gunmetal Black Full Rim Square John Jacobs TR Flex",
+        "price": 3400,
+        "image": "https://static5.lenskart.com/media/catalog/product/pro/1/thumbnail/480x480/9df78eab33525d08d6e5fb8d27136e95//j/i/john-jacobs-jj-e16116-c2-eyeglasses_g_8778_19_10_2023.jpg"
+      },
+      {
+        "id": "sp12",
+        "name": "Vincent Chase Brown Transparent Full Rim Geometric",
+        "description": "Brown Transparent Silver Full Rim Geometric Vincent Chase Blend Edit",
+        "price": 1400,
+        "image": "https://static5.lenskart.com/media/catalog/product/pro/1/thumbnail/480x480/9df78eab33525d08d6e5fb8d27136e95//v/i/brown-transparent-silver-full-rim-geometric-vincent-chase-blend-edit-vc-e14977-c2-eyeglasses_g_3502_10_14_22.jpg"
+      },
+      {
+        "id": "sp13",
+        "name": "John Jacobs Black Full Rim Square",
+        "description": "Matte Black Full Rim Square John Jacobs Rich Acetate",
+        "price": 3000,
+        "image": "https://static5.lenskart.com/media/catalog/product/pro/1/thumbnail/480x480/9df78eab33525d08d6e5fb8d27136e95//j/o/john-jacobs-jj-e13343-c2-eyeglasses_john-jacobs-jj-e13343-c2-eyeglasses_g_5787.jpg"
       }
     ]
   }

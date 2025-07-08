@@ -1,32 +1,60 @@
 <mvc:View controllerName="project1.controller.Payment"
-
     xmlns:mvc="sap.ui.core.mvc"
-
     xmlns="sap.m"
-
     xmlns:core="sap.ui.core">
-<Page id="payPage" class="customPageStyle" title="Payment">
-<content>
-<VBox id="_IDGenVBox3" class="sapUiLargeMargin">
-<Text id="_IDGenText5" text="{= 'Pay ₹' + ${cart>/total}}" class="sapUiSmallMarginBottom"/>
-<Label id="_IDGenLabel1" text="Select Payment Mode"/>
-<Select id="payType" selectedKey="" change="onPayModeChange">
-<items>
-<core:Item id="_IDGenItem4" key="" text="-- Select Payment Mode --"/>
-<core:Item id="_IDGenItem6" key="upi" text="UPI"/>
-<core:Item id="_IDGenItem7" key="card" text="Credit/Debit Card"/>
-</items>
-</Select>
-<Input id="upiField" placeholder="Enter UPI ID" visible="{= ${payType>/selectedKey} === 'upi'}" liveChange="onInputChange"/>
-<Input id="cardField" placeholder="Enter Card Number" visible="{= ${payType>/selectedKey} === 'card'}" type="Tel" liveChange="onInputChange"/>
-</VBox>
-</content>
-<footer>
-<Bar id="_IDGenBar1" design="Footer">
-<contentRight>
-<Button id="payBtn" text="Pay" type="Emphasized" enabled="false" press="onPay"/>
-</contentRight>
-</Bar>
-</footer>
-</Page>
+  <Page id="payPage" title="Payment" class="customPageStyle">
+    <content>
+      <HBox id="_IDGenHBox2" class="paymentContainer">
+        <!-- Left: Payment Form -->
+        <VBox id="_IDGenVBox3" class="paymentForm">
+          <Text id="_IDGenText5" text="{= 'Pay ₹' + ${cart>/total}}" class="paymentAmount"/>
+          <Label id="_IDGenLabel1" text="Select Payment Mode"/>
+          <Select id="payType" selectedKey="" change="onPayModeChange">
+            <items>
+              <core:Item id="_IDGenItem4" key="" text="-- Select Payment Mode --"/>
+              <core:Item id="_IDGenItem6" key="upi" text="UPI"/>
+              <core:Item id="_IDGenItem7" key="card" text="Credit/Debit Card"/>
+            </items>
+          </Select>
+
+          <!-- UPI Section -->
+          <VBox id="_IDGenVBox7" visible="{= ${payType>/selectedKey} === 'upi'}">
+            <Label id="_IDGenLabel3" text="Enter UPI ID"/>
+            <Input id="upiField" placeholder="e.g., yourname@bank" liveChange="onInputChange"/>
+          </VBox>
+
+          <!-- Card Section -->
+          <VBox id="_IDGenVBox8" visible="{= ${payType>/selectedKey} === 'card'}">
+            <Label id="_IDGenLabel4" text="Name on Card"/>
+            <Input id="cardName" placeholder="Cardholder Name" liveChange="onInputChange"/>
+
+            <Label id="_IDGenLabel5" text="Card Number"/>
+            <Input id="cardNumber" placeholder="XXXX XXXX XXXX XXXX" type="Tel" maxLength="16" liveChange="onInputChange"/>
+
+            <Label id="_IDGenLabel6" text="Expiry Date (MM/YY)"/>
+            <Input id="cardExpiry" placeholder="MM/YY" liveChange="onInputChange"/>
+
+            <Label id="_IDGenLabel7" text="CVV"/>
+            <Input id="cardCVV" placeholder="CVV" type="Password" maxLength="3" liveChange="onInputChange"/>
+          </VBox>
+
+          <Button id="payBtn" text="Pay" type="Emphasized" enabled="false" press="onPay"/>
+        </VBox>
+
+        <!-- Right: Offers & Visuals -->
+        <VBox id="_IDGenVBox9" class="paymentOffers">
+          <Image id="_IDGenImage3" src="images/secure-payment.png" width="100px"/>
+          <Text id="_IDGenText8" text="💳 Get 10% off with XYZ Bank Cards" class="offerText"/>
+          <Image id="_IDGenImage4" src="images/accepted-cards.png" width="150px"/>
+        </VBox>
+      </HBox>
+    </content>
+    <footer>
+      <Bar id="_IDGenBar1" design="Footer">
+        <contentRight>
+          <Button id="payBtnFooter" text="Pay" type="Emphasized" enabled="false" press="onPay"/>
+        </contentRight>
+      </Bar>
+    </footer>
+  </Page>
 </mvc:View>

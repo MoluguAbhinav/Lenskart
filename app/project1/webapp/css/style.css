@@ -39,4 +39,48 @@
   @media (max-width: 600px) {
     .customProductCard { width: 100% !important; }
   }
-  
+  /* Payment Page Main Container */
+.customPageStyle {
+  background: #f8fafc;
+}
+
+/* VBox Content Styling */
+.sapUiLargeMargin {
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 2px 16px rgba(0,0,0,0.08);
+  padding: 36px 28px 28px 28px;
+  margin-top: 40px;
+  max-width: 410px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.paymentContainer {
+  justify-content: space-between;
+  padding: 2rem;
+}
+
+.paymentForm {
+  width: 60%;
+}
+
+.paymentOffers {
+  width: 35%;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.paymentAmount {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
+
+.offerText {
+  color: green;
+  font-weight: bold;
+  margin-top: 1rem;
+}
+
+
